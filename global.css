@@ -29,3 +29,31 @@
     font-size: 2rem;
     font-family: 'Prompt', sans-serif;
 }
+
+.colors {
+    background: linear-gradient(to right, #1fa2e7, #2bd8c6);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.2rem;
+    position: relative;
+    z-index: 1;  
+}
+
+.colors::before {
+    position:absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #2bd8c6 ,#1fa2e7 );
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+
+}
+
+.colors:hover::before {
+    opacity: 1;
+    cursor: pointer;
+}
