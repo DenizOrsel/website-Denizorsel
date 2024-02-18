@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 235, 59, 1) 0%,
+    rgba(87, 194, 30, 1) 100%
+  );
+}
+
+::selection {
+  background-color: #000000;
+  color: #fff;
+}
