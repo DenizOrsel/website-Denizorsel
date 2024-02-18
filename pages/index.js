@@ -16,7 +16,7 @@ export default function Home() {
           <code className="font-mono font-bold">& Designer</code>
         </p>
       </div>
-      <div class="flex flex-col items-center justify-center min-h-screen">
+      <div className="flex flex-col items-center justify-center min-h-screen">
         <h1 className="text-9xl font-bold">Deniz Orsel</h1>
         <p className="text-4xl font-light">denizonerorsel@gmail.com</p>
       </div>
