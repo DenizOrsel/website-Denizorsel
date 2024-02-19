@@ -18,7 +18,9 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center justify-center min-h-screen">
         <h1 className="text-5xl md:text-9xl font-bold">Deniz Orsel</h1>
-        <p className="md:text-4xl font-light">denizonerorsel@gmail.com</p>
+        <p className="md:text-4xl font-light">
+          <a href='mailto:denizonerorsel@gmail.com'>denizonerorsel@gmail.com</a>
+        </p>
       </div>
     </main>
   );
