@@ -4,7 +4,7 @@ import { Prompt } from "next/font/google";
 
 const prompt = Prompt({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400"],
 });
 
 export default function Home() {
