@@ -1,6 +1,5 @@
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
-import Title from "@/components/Title";
 import { Prompt } from "next/font/google";
 
 const prompt = Prompt({
