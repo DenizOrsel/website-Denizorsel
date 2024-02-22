@@ -37,3 +37,8 @@ button {
 button:hover {
  color: rgb(87, 194, 30);
 }
+
+.canvas {
+   position: fixed !important;
+    height: 50% !important;
+}

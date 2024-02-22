@@ -1,22 +1,17 @@
-import React from 'react'
-import { useRef } from "react";
-import { useFrame } from "@react-three/fiber";
-import { MeshNormalMaterial } from 'three';
+import React from "react";
+import { OrbitControls } from "@react-three/drei";
 
 const House3d = () => {
-  const torusRef = useRef();
-  
-
-  useFrame(() => {
-    torusRef.current.rotation.y += 0.01;
-  });
 
   return (
-    <mesh ref={torusRef}>
-      <torusKnotGeometry />
-      <meshNormalMaterial />
-    </mesh>
+    <>
+      <OrbitControls />
+      <mesh>
+        <torusKnotGeometry />
+        <meshBasicMaterial color="black" wireframe />
+      </mesh>
+    </>
   );
-}
+};
 
-export default House3d
+export default House3d;

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navigation = () => {
   return (
-    <nav className="flex flex-col sm:flex-row sm:block absolute md:top-0 right-0 mt-4 mr-4">
+    <nav className="flex flex-col sm:flex-row sm:block absolute md:top-0 right-0 mt-4 mr-4 z-10">
       <Link
         href="https://www.linkedin.com/in/deniz-orsel-60243563/"
         target="_blank"

@@ -15,8 +15,8 @@ export default function Home() {
       className={`flex min-h-screen flex-col items-center justify-between p-12 ${prompt.className}`}
     >
       <Navigation />
-      <Canvas className="z-[-1]">
-      <House3d />
+      <Canvas className="canvas">
+        <House3d />
       </Canvas>
       <Contact />
     </main>
