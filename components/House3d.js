@@ -1,16 +1,22 @@
 import React from "react";
-import { OrbitControls } from "@react-three/drei";
+import { Stage, OrbitControls } from "@react-three/drei";
+import { Perf } from "r3f-perf";
 
 const House3d = () => {
-
   return (
-    <>
-      <OrbitControls />
+    <Stage
+    >
+      <OrbitControls
+        minPolarAngle={Math.PI / 4}
+        maxPolarAngle={Math.PI / 2}
+        enableZoom={false}
+      />
+      <Perf position="bottom-left" />
       <mesh>
-        <torusKnotGeometry />
+        <octahedronGeometry />
         <meshBasicMaterial color="black" wireframe />
       </mesh>
-    </>
+    </Stage>
   );
 };
 

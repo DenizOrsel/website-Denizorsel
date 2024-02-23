@@ -14,14 +14,6 @@
   margin: 0;
 }
 
-body {
-  background: linear-gradient(
-    to bottom right,
-    rgba(255, 235, 59, 1) 0%,
-    rgba(87, 194, 30, 1) 100%
-  );
-}
-
 ::selection {
   background-color: #000000;
   color: #fff;
@@ -35,10 +27,12 @@ button {
 }
 
 button:hover {
- color: rgb(87, 194, 30);
+  color: rgb(87, 194, 30);
 }
 
-.canvas {
-   position: fixed !important;
-    height: 50% !important;
+.canvas-container {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  margin-top: 200px;
 }
