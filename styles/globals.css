@@ -32,11 +32,23 @@ button:hover {
 
 .canvas-container {
   position: relative;
-  width: 200px;
-  height: 300px;
+  width: 18rem;
+  height: 30rem;
   margin-top: 200px;
 }
 
 .contact-container {
   margin-bottom: 8rem;
+}
+
+@media (max-height: 1050px) {
+  .canvas-container {
+    display: none;
+  }
+
+  .contact-container {
+    display:grid;
+    place-items: center;
+    height: 100vh;
+  }
 }

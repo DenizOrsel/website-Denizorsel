@@ -17,7 +17,7 @@ export default function Home() {
     >
       <Navigation />
       <div className="canvas-container">
-        <Canvas camera={{ position: [10, 2, 3] }}>
+        <Canvas camera={{ position: [10, 2, 3], zoom: 1 }}>
           <House3d />
         </Canvas>
       </div>
